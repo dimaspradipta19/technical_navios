@@ -12,14 +12,23 @@ class AddDataPage extends StatefulWidget {
   State<AddDataPage> createState() => _AddDataPageState();
 }
 
-final TextEditingController _emailController = TextEditingController();
-final TextEditingController _namaController = TextEditingController();
-final TextEditingController _noTelp = TextEditingController();
-final _formKey = GlobalKey<FormState>();
-
-final db = FirebaseFirestore.instance;
-
 class _AddDataPageState extends State<AddDataPage> {
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _namaController = TextEditingController();
+  final TextEditingController _noTelp = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+
+  final db = FirebaseFirestore.instance;
+  
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    _emailController.dispose();
+    _namaController.dispose();
+    _noTelp.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -16,15 +16,14 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-FirebaseAuth _auth = FirebaseAuth.instance;
+class _HomePageState extends State<HomePage> {
+  final FirebaseAuth auth = FirebaseAuth.instance;
 
 // Membuat atau mendapatkan referensi koleksi "users"
-CollectionReference usersCollection =
-    FirebaseFirestore.instance.collection('users');
+  final CollectionReference usersCollection =
+      FirebaseFirestore.instance.collection('users');
 
-final db = FirebaseFirestore.instance;
-
-class _HomePageState extends State<HomePage> {
+  final db = FirebaseFirestore.instance;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -70,7 +69,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             Center(
               child:
-                  Text("User saat ini ${_auth.currentUser?.email ?? "Kosong"}"),
+                  Text("User saat ini ${auth.currentUser?.email ?? "Kosong"}"),
             ),
             StreamBuilder<QuerySnapshot>(
               stream: usersCollection.snapshots(),

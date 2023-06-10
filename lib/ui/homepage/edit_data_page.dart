@@ -18,17 +18,26 @@ class EditDataPage extends StatefulWidget {
   State<EditDataPage> createState() => _EditDataPageState();
 }
 
-final TextEditingController _emailController = TextEditingController();
-final TextEditingController _namaController = TextEditingController();
-final TextEditingController _noTelp = TextEditingController();
-final _formKey = GlobalKey<FormState>();
-
-final db = FirebaseFirestore.instance;
-
-CollectionReference usersCollection =
-    FirebaseFirestore.instance.collection('users');
-
 class _EditDataPageState extends State<EditDataPage> {
+  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _namaController = TextEditingController();
+  final TextEditingController _noTelp = TextEditingController();
+  final _formKey = GlobalKey<FormState>();
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    _emailController.dispose();
+    _namaController.dispose();
+    _noTelp.dispose();
+  }
+
+  final db = FirebaseFirestore.instance;
+
+  final CollectionReference usersCollection =
+      FirebaseFirestore.instance.collection('users');
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
