@@ -1,16 +1,24 @@
 # technical_navios
 
-A new Flutter project.
-
+Flutter project for technical test at Navios.
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This is a CRUD project that also using several third parties to support the apps like,
 
-A few resources to get you started if this is your first Flutter project:
+1. Firestore for storing data that user created inside the app
+2. Firebase Authentication using email and password.
+3. Provider state management for helping managing the state like add data, delete data, and also update the data.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Overview
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+What you can do with this app?
+
+1. you can REGISTER account, and storing at firestore database
+2. you can LOGIN into the app using the created account before
+3. you can ADD the data into firestore like name, email and phoneNumber.
+4. you also can EDIT the data you created last time.
+5. you can DELETE the data by ID
+6. last you can LOGOUT from the apps and login with another account
+
+
+
