@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "342934127961",
+    "project_id": "technical-navios",
+    "storage_bucket": "technical-navios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342934127961:android:f26e973e477866f1377848",
+        "android_client_info": {
+          "package_name": "com.example.technical_navios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342934127961-2enmvqgkpqgdct265t33l0c21tjpo31j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSGvKhWFUsA4goGpMeWkEFINTeApdYRhs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342934127961-2enmvqgkpqgdct265t33l0c21tjpo31j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
