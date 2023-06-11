@@ -20,5 +20,11 @@ What you can do with this app?
 5. you can DELETE the data by ID
 6. last you can LOGOUT from the apps and login with another account
 
+## How to use
+
+1. you can add the data using floating action button in the bottom on the homescreen
+2. you can edit the data by clicking the data and must filled all the text form field to update with new data
+3. you can delete the data by tapping the delete button, it has a alert dialog when user want to delete the data.
+
 
 
